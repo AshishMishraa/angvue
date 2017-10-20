@@ -18,7 +18,7 @@ class CreateClientsTable extends Migration
             $table->integer('team_id')->index();
             $table->integer('user_id')->index();
             $table->text('name');
-            $table->text('state', 10)->default('INACTIVE');
+            $table->text('state', 10);
             $table->timestamps();
             $table->softDeletes();
         });
